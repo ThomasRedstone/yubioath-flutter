@@ -5,8 +5,5 @@ install_root_data:
 - manifest.json
 - yubioath-flutter.apparmor
 - yubioath-flutter.desktop
-- flutter-ut-embedder
-- libflutter_engine.so
 - flutter_assets
-- icudtl.dat
 - run.sh
