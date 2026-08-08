@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Yubico Authenticator
+Comment=Flutter Yubico Authenticator UI on flutter-ut-embedder
+Exec=run.sh
+Terminal=false
+Type=Application
+X-Ubuntu-Touch=true

@@ -1,0 +1,12 @@
+clickable_minimum_required: 8.8.0
+builder: custom
+build: ["true"]
+install_root_data:
+- manifest.json
+- yubioath-flutter.apparmor
+- yubioath-flutter.desktop
+- flutter-ut-embedder
+- libflutter_engine.so
+- flutter_assets
+- icudtl.dat
+- run.sh

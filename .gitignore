@@ -51,3 +51,11 @@ app.*.map.json
 # Generated source files
 /lib/generated
 /android/app/.cxx/
+
+# --- arm64 Flutter click packaging (2026-08-08) — only the packaging
+# config is source, the rest is copied in at deploy time ---
+/click-arm64/payload/flutter-ut-embedder
+/click-arm64/payload/libflutter_engine.so
+/click-arm64/payload/flutter_assets/
+/click-arm64/payload/icudtl.dat
+/click-arm64/payload/build/
