@@ -1,6 +1,6 @@
 {
   "name": "yubioath-flutter.tom",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "framework": "$ENV{CLICK_FRAMEWORK}",
   "maintainer": "Tom Redstone <redders@gmail.com>",
   "title": "Yubico Authenticator (Flutter)",

@@ -1,6 +1,7 @@
 [Desktop Entry]
 Name=Yubico Authenticator
 Comment=Flutter Yubico Authenticator UI on flutter-ut-embedder
+Icon=icon.png
 Exec=run.sh
 Terminal=false
 Type=Application

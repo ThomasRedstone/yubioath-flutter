@@ -5,5 +5,6 @@ install_root_data:
 - manifest.json
 - yubioath-flutter.apparmor
 - yubioath-flutter.desktop
+- icon.png
 - flutter_assets
 - run.sh
