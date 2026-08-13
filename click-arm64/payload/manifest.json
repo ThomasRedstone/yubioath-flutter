@@ -2,7 +2,7 @@
   "name": "yubioath-flutter.tom",
   "version": "0.2.2",
   "framework": "$ENV{CLICK_FRAMEWORK}",
-  "maintainer": "Tom Redstone <redders@gmail.com>",
+  "maintainer": "Thomas Redstone <redders@gmail.com>",
   "title": "Yubico Authenticator (Flutter)",
   "description": "Yubico Authenticator (github.com/Yubico/yubioath-flutter) UI, running on flutter-ut-embedder. Python helper backend (USB/NFC/PCSC) not bundled — known gap.",
   "architecture": "$ENV{ARCH}",
