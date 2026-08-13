@@ -13,7 +13,7 @@ DIR="$(cd "$(dirname "$0")" && pwd)"
 # shared "runtime" click's stable install path instead — updating the
 # runtime updates every app that uses it, in one push. See
 # ~/own/ut/ut-flutter-embedder.md for the full story.
-RUNTIME="/opt/click.ubuntu.com/flutter-ut-embedder-runtime.tom/current"
+RUNTIME="/opt/click.ubuntu.com/flutter-ut-embedder-runtime.thomasredstone/current"
 
 # Real UT app launches (via ubuntu-app-launch/upstart) get their Wayland
 # target as MIR_SERVER_WAYLAND_HOST, a single "<dir>/<socket-name>" path,
