@@ -4,7 +4,7 @@
   "framework": "$ENV{CLICK_FRAMEWORK}",
   "maintainer": "Thomas Redstone <redders@gmail.com>",
   "title": "Yubico Authenticator (Flutter)",
-  "description": "Yubico Authenticator (github.com/Yubico/yubioath-flutter) UI, running on flutter-ut-embedder. Python helper backend (USB/NFC/PCSC) not bundled — known gap.",
+  "description": "Unofficial Ubuntu Touch port of Yubico Authenticator. Requires matching Flutter UT runtime, ARM64 CPython 3.12 ut-yubioath-helper and pcscd/libccid installed separately.",
   "architecture": "$ENV{ARCH}",
   "hooks": {
     "yubioath-flutter": {

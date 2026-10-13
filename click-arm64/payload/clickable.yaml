@@ -1,6 +1,10 @@
 clickable_minimum_required: 8.8.0
 builder: custom
-build: ["true"]
+framework: ubuntu-touch-24.04-1.x
+build:
+- test -f $ROOT/flutter_assets/kernel_blob.bin
+- test -f $ROOT/app-build.json
+- test -f $ROOT/UPSTREAM-LICENSE
 install_root_data:
 - manifest.json
 - yubioath-flutter.apparmor
@@ -8,3 +12,6 @@ install_root_data:
 - icon.png
 - flutter_assets
 - run.sh
+- preflight.py
+- app-build.json
+- UPSTREAM-LICENSE
