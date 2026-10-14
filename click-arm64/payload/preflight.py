@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import json, sys
+import json, sys, hashlib
 from pathlib import Path
 def fail(message):
  print('Yubico UT launch: '+message,file=sys.stderr); sys.exit(1)
@@ -11,4 +11,7 @@ try:
  if meta['engine_revision']!=build['engine_revision'] or meta['flutter_version']!=build['flutter_version']: fail('app/runtime SDK mismatch; rebuild or restore matching runtime')
  for name in ('flutter-ut-embedder','libflutter_engine.so','icudtl.dat'):
   if not (runtime/name).is_file(): fail('runtime missing '+name)
+  expected=meta['artifacts'][name]
+  with open(runtime/name,'rb') as file:actual=hashlib.file_digest(file,'sha256').hexdigest()
+  if actual!=expected: fail('runtime integrity check failed: '+name)
 except (OSError,KeyError,ValueError): fail('install a compatible runtime and build this app with click-arm64/build-public.py')

@@ -2,6 +2,8 @@ clickable_minimum_required: 8.8.0
 builder: custom
 framework: ubuntu-touch-24.04-1.x
 build:
+- test -x $ROOT/runtime/flutter-ut-embedder
+- test -f $ROOT/runtime/runtime.json
 - test -f $ROOT/flutter_assets/kernel_blob.bin
 - test -f $ROOT/app-build.json
 - test -f $ROOT/UPSTREAM-LICENSE
@@ -15,3 +17,4 @@ install_root_data:
 - preflight.py
 - app-build.json
 - UPSTREAM-LICENSE
+- runtime
